@@ -1,0 +1,115 @@
+/* Footer */
+
+.footer {
+
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  margin-top: 50px;
+
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #F8B195;
+
+    /* background-color: rgb(231, 245, 228, .9); */
+
+
+  box-shadow:  2px 2px 5px 0px #000,
+              4px 6px 5px 0px #ccc,
+               6px 9px 5px 0px #eae1f2;
+
+  /* background-color: rgb(248, 177, 132, .8); */
+  /* background-color: #FFE3B0; */
+}
+
+#staff-logo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+  position: relative;
+    font-size: .5rem;
+}
+
+.line {
+  border-bottom: 1px solid white;
+  height: 10px;
+
+  width: 200px;
+}
+
+.letter {
+  position: absolute;
+  transition: .2s;
+  color: #F8B195;
+}
+
+#letter-1 {
+  top: 3px;
+  left: 12px;
+}
+
+#letter-2 {
+  top: 14px;
+  left: 24px;
+}
+
+#letter-3 {
+  top: 25px;
+  left: 36px;
+}
+
+#letter-4 {
+  bottom: -7px;
+  left: 48px;
+}
+
+#letter-5 {
+  bottom: 4px;
+  left: 60px;
+}
+
+#letter-6 {
+  top: 14px;
+  left: 96px;
+}
+
+#letter-7 {
+  top: 3px;
+  left: 108px;
+}
+
+
+#letter-8 {
+  top: 14px;
+  left: 120px;
+}
+
+
+#letter-9 {
+  top: 25px;
+  left: 132px;
+}
+
+
+#letter-10 {
+  top: 36px;
+  left: 144px;
+}
+
+
+#letter-11 {
+  bottom: 4px;
+  left: 156px;
+}
+
+#letter-12 {
+  top: -20px;
+  left: 174px;
+  font-size: 1.1rem;
+}
