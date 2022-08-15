@@ -1,4 +1,4 @@
-const c4 = new Audio('Piano_mp3/C4.mp3');
+const c4 = new Audio('Triad_Trials/js/Piano_mp3/C4.mp3');
 const cSharp4 = new Audio('Piano_mp3/C-sharp4.mp3')
 const d4 = new Audio('Piano_mp3/D4.mp3');
 const dSharp4 = new Audio('Piano_mp3/D-sharp4.mp3');
