@@ -1,29 +1,61 @@
-const c4 = new Audio('Triad_Trials/js/Piano_mp3/C4.mp3');
-const cSharp4 = new Audio('Piano_mp3/C-sharp4.mp3')
-const d4 = new Audio('Piano_mp3/D4.mp3');
-const dSharp4 = new Audio('Piano_mp3/D-sharp4.mp3');
-const e4 = new Audio('Piano_mp3/E4.mp3');
-const f4 = new Audio('Piano_mp3/F4.mp3');
-const fSharp4 = new Audio('Piano_mp3/F-sharp4.mp3');
-const g4 = new Audio('Piano_mp3/G4.mp3');
-const gSharp4 = new Audio('Piano_mp3/G-sharp4.mp3');
-const a4 = new Audio('Piano_mp3/A4.mp3');
-const aSharp4 = new Audio('Piano_mp3/A-sharp4.mp3');
-const b4 = new Audio('Piano_mp3/B4.mp3');
-const c5 = new Audio('Piano_mp3/C5.mp3');
-const cSharp5 = new Audio('Piano_mp3/C-sharp5.mp3');
-const d5 = new Audio('Piano_mp3/D5.mp3');
-const dSharp5 = new Audio('Piano_mp3/D-sharp5.mp3');
-const e5 = new Audio('Piano_mp3/E5.mp3');
-const f5 = new Audio('Piano_mp3/F5.mp3');
-const fSharp5 = new Audio('Piano_mp3/F-sharp5.mp3');
-const g5 = new Audio('Piano_mp3/G5.mp3');
+//for Github Pages
+
+const c4 = new Audio('https://audio.jukehost.co.uk/w3rgL319RonS2umZrESWRAkNmKEbdXLt');
+const cSharp4 = new Audio('https://audio.jukehost.co.uk/l3hFc4kdvTtutJN5aJCZ9QJPYj1F8Khn')
+const d4 = new Audio('js/Piano_mp3/D4.mp3');
+const dSharp4 = new Audio('js/Piano_mp3/D-sharp4.mp3');
+const e4 = new Audio('js/Piano_mp3/E4.mp3');
+const f4 = new Audio('js/Piano_mp3/F4.mp3');
+const fSharp4 = new Audio('js/Piano_mp3/F-sharp4.mp3');
+const g4 = new Audio('js/Piano_mp3/G4.mp3');
+const gSharp4 = new Audio('js/Piano_mp3/G-sharp4.mp3');
+const a4 = new Audio('js/Piano_mp3/A4.mp3');
+const aSharp4 = new Audio('js/Piano_mp3/A-sharp4.mp3');
+const b4 = new Audio('js/Piano_mp3/B4.mp3');
+const c5 = new Audio('js/Piano_mp3/C5.mp3');
+const cSharp5 = new Audio('js/Piano_mp3/C-sharp5.mp3');
+const d5 = new Audio('js/Piano_mp3/D5.mp3');
+const dSharp5 = new Audio('js/Piano_mp3/D-sharp5.mp3');
+const e5 = new Audio('js/Piano_mp3/E5.mp3');
+const f5 = new Audio('js/Piano_mp3/F5.mp3');
+const fSharp5 = new Audio('js/Piano_mp3/F-sharp5.mp3');
+const g5 = new Audio('js/Piano_mp3/G5.mp3');
+
 
 //Back-up sounds, for logo animation
-const backupA = new Audio('Piano_mp3/yA4.mp3');
-const backupA2 = new Audio('Piano_mp3/zA4.mp3');
-const backupC = new Audio('Piano_mp3/zC5.mp3');
-const backupF = new Audio('Piano_mp3/zF4.mp3');
+const backupA = new Audio('/Users/matthew/Documents/Atom_Files/Triad_Trials/Triad_Trials/js/Piano_mp3/yA4.mp3');
+const backupA2 = new Audio('/Users/matthew/Documents/Atom_Files/Triad_Trials/Triad_Trials/js/Piano_mp3/zA4.mp3');
+const backupC = new Audio('/Users/matthew/Documents/Atom_Files/Triad_Trials/Triad_Trials/js/Piano_mp3/zC5.mp3');
+const backupF = new Audio('/Users/matthew/Documents/Atom_Files/Triad_Trials/Triad_Trials/js/Piano_mp3/zF4.mp3');
+
+// for local use
+// const c4 = new Audio('/Users/matthew/Documents/Atom_Files/Triad_Trials/Triad_Trials/js/Piano_mp3/C4.mp3');
+// const cSharp4 = new Audio('/Users/matthew/Documents/Atom_Files/Triad_Trials/Triad_Trials/js/Piano_mp3/C-sharp4.mp3')
+// const d4 = new Audio('/Users/matthew/Documents/Atom_Files/Triad_Trials/Triad_Trials/js/Piano_mp3/D4.mp3');
+// const dSharp4 = new Audio('/Users/matthew/Documents/Atom_Files/Triad_Trials/Triad_Trials/js/Piano_mp3/D-sharp4.mp3');
+// const e4 = new Audio('/Users/matthew/Documents/Atom_Files/Triad_Trials/Triad_Trials/js/Piano_mp3/E4.mp3');
+// const f4 = new Audio('/Users/matthew/Documents/Atom_Files/Triad_Trials/Triad_Trials/js/Piano_mp3/F4.mp3');
+// const fSharp4 = new Audio('/Users/matthew/Documents/Atom_Files/Triad_Trials/Triad_Trials/js/Piano_mp3/F-sharp4.mp3');
+// const g4 = new Audio('/Users/matthew/Documents/Atom_Files/Triad_Trials/Triad_Trials/js/Piano_mp3/G4.mp3');
+// const gSharp4 = new Audio('/Users/matthew/Documents/Atom_Files/Triad_Trials/Triad_Trials/js/Piano_mp3/G-sharp4.mp3');
+// const a4 = new Audio('/Users/matthew/Documents/Atom_Files/Triad_Trials/Triad_Trials/js/Piano_mp3/A4.mp3');
+// const aSharp4 = new Audio('/Users/matthew/Documents/Atom_Files/Triad_Trials/Triad_Trials/js/Piano_mp3/A-sharp4.mp3');
+// const b4 = new Audio('/Users/matthew/Documents/Atom_Files/Triad_Trials/Triad_Trials/js/Piano_mp3/B4.mp3');
+// const c5 = new Audio('/Users/matthew/Documents/Atom_Files/Triad_Trials/Triad_Trials/js/Piano_mp3/C5.mp3');
+// const cSharp5 = new Audio('/Users/matthew/Documents/Atom_Files/Triad_Trials/Triad_Trials/js/Piano_mp3/C-sharp5.mp3');
+// const d5 = new Audio('/Users/matthew/Documents/Atom_Files/Triad_Trials/Triad_Trials/js/Piano_mp3/D5.mp3');
+// const dSharp5 = new Audio('/Users/matthew/Documents/Atom_Files/Triad_Trials/Triad_Trials/js/Piano_mp3/D-sharp5.mp3');
+// const e5 = new Audio('/Users/matthew/Documents/Atom_Files/Triad_Trials/Triad_Trials/js/Piano_mp3/E5.mp3');
+// const f5 = new Audio('/Users/matthew/Documents/Atom_Files/Triad_Trials/Triad_Trials/js/Piano_mp3/F5.mp3');
+// const fSharp5 = new Audio('/Users/matthew/Documents/Atom_Files/Triad_Trials/Triad_Trials/js/Piano_mp3/F-sharp5.mp3');
+// const g5 = new Audio('/Users/matthew/Documents/Atom_Files/Triad_Trials/Triad_Trials/js/Piano_mp3/G5.mp3');
+//
+//
+// //Back-up sounds, for logo animation
+// const backupA = new Audio('/Users/matthew/Documents/Atom_Files/Triad_Trials/Triad_Trials/js/Piano_mp3/yA4.mp3');
+// const backupA2 = new Audio('/Users/matthew/Documents/Atom_Files/Triad_Trials/Triad_Trials/js/Piano_mp3/zA4.mp3');
+// const backupC = new Audio('/Users/matthew/Documents/Atom_Files/Triad_Trials/Triad_Trials/js/Piano_mp3/zC5.mp3');
+// const backupF = new Audio('/Users/matthew/Documents/Atom_Files/Triad_Trials/Triad_Trials/js/Piano_mp3/zF4.mp3');
 
 
 
