@@ -54,7 +54,7 @@ a {
 
 .help:hover {
   transition: 0.3s;
-  box-shadow: 0 0 10px rgb(181, 226, 245)
+  box-shadow: 0 0 10px rgb(181, 226, 245);
 }
 
 .help-overlay {
@@ -88,6 +88,14 @@ a {
   justify-content: flex-start;
 
   transition: 0.5s;
+}
+
+@media screen and (max-width: 600px) {
+  .help-overlay {
+    width: 380px;
+    height: 500px;
+  }
+
 }
 
 .help-p {
