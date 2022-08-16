@@ -23,10 +23,10 @@ const g5 = new Audio('js/Piano_mp3/G5.mp3');
 
 
 //Back-up sounds, for logo animation
-const backupA = new Audio('/Users/matthew/Documents/Atom_Files/Triad_Trials/Triad_Trials/js/Piano_mp3/yA4.mp3');
-const backupA2 = new Audio('/Users/matthew/Documents/Atom_Files/Triad_Trials/Triad_Trials/js/Piano_mp3/zA4.mp3');
-const backupC = new Audio('/Users/matthew/Documents/Atom_Files/Triad_Trials/Triad_Trials/js/Piano_mp3/zC5.mp3');
-const backupF = new Audio('/Users/matthew/Documents/Atom_Files/Triad_Trials/Triad_Trials/js/Piano_mp3/zF4.mp3');
+const backupA = new Audio('js/Piano_mp3/yA4.mp3');
+const backupA2 = new Audio('js/Piano_mp3/zA4.mp3');
+const backupC = new Audio('js/Piano_mp3/zC5.mp3');
+const backupF = new Audio('js/Piano_mp3/zF4.mp3');
 
 // for local use
 // const c4 = new Audio('/Users/matthew/Documents/Atom_Files/Triad_Trials/Triad_Trials/js/Piano_mp3/C4.mp3');

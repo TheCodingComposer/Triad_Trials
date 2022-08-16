@@ -20,6 +20,7 @@ body {
 
 .main-wrapper {
   height: 100vh;
+  position: relative;
 }
 
 a {
@@ -29,6 +30,124 @@ a {
   padding: 0;
   display: flex;
   align-items: center;
+}
+
+
+.help {
+  height: 35px;
+  width: 35px;
+  border-radius: 20%;
+  background-color: #612f69;
+  margin-right: 15px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.help > p {
+  color: ivory;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.help:hover {
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgb(181, 226, 245)
+}
+
+.help-overlay {
+  display: none;
+
+  z-index: 3;
+  width: 480px;
+  height: 450px;
+  background-color: ivory!important;
+  opacity: 1!important;
+  position: absolute;
+
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 5%;
+
+
+  border-radius: 8px;
+  box-shadow: 3px 3px gray;
+
+  top: 80px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Roboto", sans-serif;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  transition: 0.5s;
+}
+
+.help-p {
+  line-height: 1.3;
+  font-size: 1.3rem;
+}
+
+.x-button {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  font-size: 1rem;
+  font-weight: 200;
+  color: ivory;
+  background-color: #612f69;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.x-button > p {
+  margin-top: 0px;
+  margin-bottom: 13%;
+}
+
+.help-nav-buttons {
+  width: 30%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 30px;
+  cursor: pointer;
+}
+
+.arrow {
+  width: 35px;
+  height: 35px;
+  background-color: #612f69;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    border-radius: 10%;
+}
+
+#back-arrow-img {
+  width: 20px;
+  transform: rotate(90deg);
+  margin-right: 3px;
+}
+
+#next-arrow-img {
+  width: 20px;
+  transform: rotate(-90deg);
+  margin-left: 3px;
 }
 
 
@@ -107,7 +226,7 @@ button {
   color: ivory;
   cursor: pointer;
   transition: 0.3s;
-  border-radius: 5px;
+  border-radius: 7px;
   box-shadow: 0;
 }
 
