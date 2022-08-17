@@ -10,6 +10,8 @@ let correctNum = 0;
 let incorrectNum = 0;
 let answered = false;
 var correctAnswer = '';
+let missedAnswers = [];
+let correctAnswers = [];
 
 let randomRoot = '';
 let randomQuality = '';
@@ -21,14 +23,47 @@ const returnForm = document.getElementById('returnToTest');
 
 const allNotes = ['c4', 'c-sharp4', 'd4', 'd-sharp4', 'e4', 'f4', 'f-sharp4', 'g4', 'g-sharp4', 'a4', 'a-sharp4', 'b4', 'c5', 'c-sharp5', 'd5', 'd-sharp5', 'e5', 'f5', 'f-sharp5', 'g5'];
 
+const mediumKeys = ['C', 'F', 'Bb', 'Eb', 'G', 'D', 'A'];
+const hardKeys = ['C', 'F', 'Bb', 'Eb', 'Ab', 'Db', 'G', 'D', 'A', 'E', 'B'];
 
 
+// Update root if necessary based on mode
+function rootMode(root) {
+
+  if (mode === 'easy') {
+    if (root.length != 1) {
+      return getRandomRoot();
+    }
+  }
+
+  //Max 3 sharps or flat in Medium Mode
+
+  if (mode === 'medium') {
+    if (mediumKeys.includes(root) !== true) {
+      console.log(root);
+      return getRandomRoot();
+    }
+  }
+  //Max 5 sharps or flats in Hard Mode
+
+  if (mode === 'hard') {
+    if (mediumKeys.includes(root) !== true) {
+      return getRandomRoot();
+    }
+  }
+
+  return root;
+}
 
 
 function getRandomRoot() {
   let rootIndex = notes[Math.floor(Math.random() * 12)];
   //choose random enharmonic equivalent, excluding double sharps/flats
   let root = rootIndex[Math.floor(Math.random() * rootIndex.length)];
+
+  root = rootMode(root);
+  //Only Natural notes in Easy Mode
+
 
   if (root.length > 2 && rootIndex.length > 2) {
     root = rootIndex[1];
@@ -65,6 +100,7 @@ function getRandomQuality() {
       randomQuality = 'minor';
     }
     return randomQuality;
+
   } else if (mode === 'medium') {
 
       if (randomNum >= 0 && randomNum <= 2) {
@@ -178,6 +214,9 @@ answerForm.addEventListener('submit', (e) => {
     }
   }
 
+  correctAnswers.push(correctAnswer);
+
+//Correct/Wrong Answer Animation
 
   if (answer === correctAnswer || answer === alternateCorrect1 || answer === alternateCorrect2) {
     answerText.text('Correct!');
@@ -188,9 +227,13 @@ answerForm.addEventListener('submit', (e) => {
     setTimeout(function() { playSound(allNotes[correctNum + 6]); toggleGreen(allNotes[correctNum + 6]); }, 200);
     setTimeout(function() { playSound(allNotes[correctNum + 11]); toggleGreen(allNotes[correctNum + 11]); }, 300);
     correctNum ++;
+    missedAnswers.push('');
   } else {
     answerText.text('Wrong! Correct Answer: ' + correctAnswer);
     incorrectNum ++;
+    missedAnswers.push(answer);
+
+
     $('.white').addClass('red');
     $('.black').addClass('dark-red');
     allNotes.forEach( (note) => {
@@ -243,12 +286,33 @@ function toggleResults() {
 
 }
 
+showResults.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  $('#scoreResults').css({'margin-top':'0', 'margin-bottom':'0'});
+  // format results to insert into #score-p-1 element
+  let formattedResults = '';
+  for (let i = 0; i < correctAnswers.length; i++) {
+    console.log(missedAnswers[i]);
+    if (missedAnswers[i].length != 0) {
+    formattedResults += '<div style="display:grid; grid-template-columns: 1fr 1fr; width: 300px;"><div><p class="result-p"><strong>#' + (i + 1) + ' ' + '</strong><span style="color:red;">' + missedAnswers[i] + '</span></div>     <div><p class="result-p">Correct: <span style="color:green;">' + correctAnswers[i] + '</span></p></div></div>';
+  }
+  }
+
+  $('#scoreResults').text('Missed:');
+  $('#score-p-1').css({'font-size':'1.1rem', 'text-align':'left'});
+  $('#score-p-1').html(formattedResults);
+  $('.result-p').css('margin-top', '12px');
+  $('#showResults').css('display', 'none');
+})
+
 
 returnToTest.addEventListener('submit', (e) => {
   e.preventDefault();
 
   $('body').children().removeClass("opaque");
   $("#overlay").css('display', 'none');
+  $('#showResults').css('display', 'inherit');
   quizEnd = false;
   questionNum = 0;
 })

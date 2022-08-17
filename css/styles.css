@@ -16,7 +16,9 @@ body {
 
 }
 
-
+p {
+  margin: 0;
+}
 
 .main-wrapper {
   height: 100vh;
