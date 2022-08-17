@@ -27,6 +27,76 @@
 
 }
 
+/* Test Help */
+
+.test-help {
+  height: 35px;
+  width: 35px;
+  border-radius: 20%;
+  background-color: #612f69;
+  margin-right: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.test-help > p {
+  color: ivory;
+  font-size: 2rem;
+  margin: 0;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.test-help:hover {
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgb(181, 226, 245);
+}
+
+.test-help-overlay {
+  display: none;
+
+  z-index: 3;
+  width: 480px;
+  height: 450px;
+  background-color: ivory!important;
+  opacity: 1!important;
+  position: absolute;
+
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 5%;
+
+
+  border-radius: 8px;
+  box-shadow: 3px 3px gray;
+
+  top: 80px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Roboto", sans-serif;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 600px) {
+  .test-help-overlay {
+    width: 380px;
+    height: 500px;
+  }
+
+}
+
+/* Test Modes (Easy, Medium, Hard, Pro, Prodigy) */
 
 .test-mode {
   position: relative;

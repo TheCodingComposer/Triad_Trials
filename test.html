@@ -19,6 +19,30 @@
 
 <body>
 
+  <div class="test-help-overlay">
+
+    <div class="x-button">
+      <p>x</p>
+    </div>
+
+    <div class="test-help-text-wrapper">
+      <h1>Welcome to Triad Trials!</h1>
+      <p class="help-p">This simple web app is a virtual playground for learning about and testing your knowledge of triads, the basic building blocks of chords.</p>
+    </div>
+
+    <div class="help-nav-buttons">
+      <div class="back-arrow arrow">
+        <img id="back-arrow-img" src="/Users/matthew/Documents/Atom_Files/Triad_Trials/Triad_Trials/images/arrow-down-3101.png" alt="back-arrow">
+        <!-- <img src="images/arrow-down-3101.png" alt="back-arrow"> -->
+      </div>
+      <p class='help-nav-p'>1/10</p>
+      <div class="next-arrow arrow">
+        <img id="next-arrow-img" src="/Users/matthew/Documents/Atom_Files/Triad_Trials/Triad_Trials/images/arrow-down-3101.png" alt="next-arrow">
+        <!-- <img src="images/arrow-down-3101.png" alt="next-arrow"> -->
+      </div>
+    </div>
+  </div>
+
   <div id="overlay">
     <h1 id="scoreResults"></h1>
     <p id="score-p-1" class="score-p"></p>
@@ -26,6 +50,10 @@
       <button id="return-btn" class="submit-btn" type="submit" name="button">Back to Quiz</button>
     </form>
   </div>
+
+  <div class="main-wrapper">
+
+
 
   <div class="nav-wrapper">
 
@@ -55,7 +83,9 @@
   <div class="test-wrapper">
 
     <div class="mode-wrapper">
-
+      <div class="test-help">
+        <p>?</p>
+      </div>
     <div class="test-mode">
       <form id="mode-form" class="form">
         <button id="mode-btn" class="submit-btn" type="submit" name="button"><p id="mode-text">Mode&nbsp</p><img src="images/arrow-down-3101.png" style="width:20px;"></img></button>
@@ -202,6 +232,8 @@
 
       </div>
 
+        </div>
+
 
 
     <!-- <script src="/socket.io/socket.io.js"></script> -->
@@ -225,6 +257,9 @@
     </script>
 
     <script type="text/javascript" src="js/test-mode.js">
+    </script>
+
+    <script type="text/javascript" src="js/test-help.js">
     </script>
 
     <script type="text/javascript" src="js/quiz-text.js">

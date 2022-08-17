@@ -5,7 +5,7 @@ let overlay = false;
 $('.help').click( () => {
   $('.help-overlay').css({'display':'flex',"opacity":"1"});
   $('.main-wrapper:not(.help-overlay)').css('opacity', '.3');
-  displayHelp(currentHelp); 
+  displayHelp(currentHelp);
   // stop next handler from being called
   setTimeout(() => {
     overlay = true;
@@ -63,21 +63,24 @@ function displayHelp(currentHelp) {
   switch (currentHelp) {
 
     case 1:
-      helpText.html('<h1>Welcome to Triad Trials!</h1> <p>This simple web app is a virtual playground for learning about and testing your knowledge of triads, the basic building blocks of chords.</p>');
+      helpText.html('<h1>Welcome to Triad Trials!</h1> <p class="help-p">This simple web app is a virtual playground for learning about and testing your knowledge of triads, the basic building blocks of chords.</p>');
       break;
     case 2:
-      helpText.html('<h1>Playing the Virtual Piano</h1><img src="/Users/matthew/Documents/Atom_Files/Triad_Trials/Triad_Trials/images/keyboard-notes.png" alt="image of piano keyboard with corresponding computer keys" style="width: 350px"></img><p>The row of computer keys starting from a and ending on "enter" represent the white keys of the piano from C4 to G5. Pressing any of these keys will "play" the corresponding piano key.</p><p>The row of computer keys above, starting with q and ending with "]", represent the black keys of the piano. Note that not all computer keys in this row will have an associated piano key, i.e. between the notes B and C and E and F.</p>');
+      helpText.html('<h1>Playing the Virtual Piano</h1><img src="/Users/matthew/Documents/Atom_Files/Triad_Trials/Triad_Trials/images/keyboard-notes.png" alt="image of piano keyboard with corresponding computer keys" style="width: 350px"></img><p class="help-p-small">The row of computer keys starting from a and ending on "enter" represent the white keys of the piano from C4 to G5. Pressing any of these keys will "play" the corresponding piano key.</p><p class="help-p-small">The row of computer keys above, starting with q and ending with "]", represent the black keys of the piano. Note that not all computer keys in this row will have an associated piano key, i.e. between the notes B and C and E and F.</p>');
       break;
     case 3:
         helpText.children().css('text-align', 'left');
-        helpText.html('<h1>Keyboard Hotkeys</h1>     <p><strong>1</strong> - Show <strong>Computer Keys</strong> associated with piano keys (a = C4, etc.)</p><p><strong>2</strong> = Show <strong>Note Names</strong> on piano keys</p><p><strong>3</strong>Display accidentals as <strong>sharps</strong> on piano keys/music staff</p><p><strong>3</strong>Display accidentals as <strong>flats</strong> on piano keys/music staff</p>');
+        helpText.html('<h1>Keyboard Hotkeys</h1>     <p class="help-p-small"><strong>1</strong> - Show <strong>Computer Keys</strong> associated with piano keys (a = C4, etc.)</p><p class="help-p-small"><strong>2</strong> - Show <strong>Note Names</strong> on piano keys</p><p class="help-p-small"><strong>3</strong> - Display accidentals as <strong>sharps</strong> on piano keys/music staff</p><p class="help-p-small"><strong>4</strong> - Display accidentals as <strong>flats</strong> on piano keys/music staff</p> <p class="help-p-small"><strong>5</strong> - Keep notes displayed on music staff after sound concludes.</p><p class="help-p-small"><strong>6</strong> - Return keyboard colors to original state.</p><p class="help-p-small"><strong>7</strong> - "Synesthesia Mode". For when you&#39;re tired of music and just want to party.</p>');
       // helpText.html('<h1>Keyboard Hotkeys</h1>     <img src="/Users/matthew/Documents/Atom_Files/Triad_Trials/Triad_Trials/images/computer_keyboard.jpeg" style="width: 350px;"> </img>    <p style="">The "Computer Keys" toggle (1) and the "Note Names" toggle (2)</p> ');
       break;
     case 4:
-      helpText.html('<h1>Show Computer Keys/Notes</h1> <img src="/Users/matthew/Documents/Atom_Files/Triad_Trials/Triad_Trials/images/note-toggle.png" style="width: 60px; float: left;">    </img>            <p style="padding-left:15px;">The "Computer Keys" toggle (1) and the "Note Names" toggle (2)</p>    <img src="/Users/matthew/Documents/Atom_Files/Triad_Trials/Triad_Trials/images/keyboard-notes.png" style="width: 370px; margin-top: 20px"></img>')
+      helpText.html('<h1>Show Computer Keys/Notes</h1> <img src="/Users/matthew/Documents/Atom_Files/Triad_Trials/Triad_Trials/images/note-toggle.png" style="width: 20%; float: left;">    </img>          <div style="">  <p class="help-p-med" style="margin-left:30%;">The "Computer Keys" toggle (1) allows you to show or hide the computer keys associated with each piano keys. </br> </br> The "Note Names" toggle (2) allows you to show or hide the note names for each piano key.</p> </div>   <img src="/Users/matthew/Documents/Atom_Files/Triad_Trials/Triad_Trials/images/keyboard-notes.png" style="width: 390px; margin-top: 10px"></img>')
       break;
     case 5:
       helpText.html('<h1>Music Staff</h1> <img src="/Users/matthew/Documents/Atom_Files/Triad_Trials/Triad_Trials/images/staff.png" style="width: 100px; float: left;">    </img>            <p style="padding-left:15px;">The "Computer Keys" toggle (1) and the "Note Names" toggle (2)</p>    ')
+      break;
+    case 6:
+      helpText.html('<h1>Triad Input</h1> <img src="/Users/matthew/Documents/Atom_Files/Triad_Trials/Triad_Trials/images/input.png" style="width: 300px;">  </img>            <p class="help-p" style="">Click on the "Root" dropdown to choose the root note of a chord (C, C#, etc.) and the "Quality" dropdown to choose the chord quality (Major, Minor, etc.). Click "Get Triad" to hear the triad played on the virtual piano and displayed in the staff box.</p>    ')
       break;
 
 
