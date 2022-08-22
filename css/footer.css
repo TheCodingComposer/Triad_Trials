@@ -39,7 +39,6 @@
 .line {
   border-bottom: 1px solid white;
   height: 10px;
-
   width: 200px;
 }
 
@@ -50,66 +49,66 @@
 }
 
 #letter-1 {
-  top: 3px;
+  top: 0px;
   left: 12px;
 }
 
 #letter-2 {
-  top: 14px;
+  top: 11px;
   left: 24px;
 }
 
 #letter-3 {
-  top: 25px;
+  top: 23px;
   left: 36px;
 }
 
 #letter-4 {
-  bottom: -7px;
+  bottom: 1px;
   left: 48px;
 }
 
 #letter-5 {
-  bottom: 4px;
+  bottom: 12px;
   left: 60px;
 }
 
 #letter-6 {
-  top: 14px;
+  top: 22px;
   left: 96px;
 }
 
 #letter-7 {
-  top: 3px;
+  top: 11px;
   left: 108px;
 }
 
 
 #letter-8 {
-  top: 14px;
+  top: 22px;
   left: 120px;
 }
 
 
 #letter-9 {
-  top: 25px;
+  top: 33px;
   left: 132px;
 }
 
 
 #letter-10 {
-  top: 36px;
+  top: 44px;
   left: 144px;
 }
 
 
 #letter-11 {
-  bottom: 4px;
+  bottom: 12px;
   left: 156px;
 }
 
 #letter-12 {
-  top: -20px;
+  top: -1px;
   left: 174px;
   font-size: 1.1rem;
 }

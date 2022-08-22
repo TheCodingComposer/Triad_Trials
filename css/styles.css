@@ -188,6 +188,7 @@ input {
 
 
 select {
+    height: 36px;
     border: 2px solid rgb(118, 118, 118);
     border-style: inset;
     background-color: ivory;
@@ -205,6 +206,8 @@ select {
 
     background-size: 17px;
   }
+
+
 
   #root-input {
     background-position: 95% 50%;
@@ -289,16 +292,16 @@ button:hover {
 
 @media (max-width: 768px) {
 
-  input {
+  select {
       font-size: 1.3rem;
   }
 
   #root-input {
-    width: 65px;
+    width: 95px;
   }
 
   #quality-input {
-    width: 120px;
+    width: 130px;
   }
 
   #root-answer {
@@ -498,6 +501,7 @@ a {
   justify-content: center;
   margin-right: 60px;
   margin-left: 10px;
+  font-size: 1rem;
   height: 250px;
   width: 150px;
   background-color: rgb(196, 180, 212, 1);
@@ -507,6 +511,8 @@ a {
   border: 1px solid black;
   box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
 }
+
+
 
 .toggle {
 
@@ -532,7 +538,7 @@ a {
   height: 35px;
   position: absolute;
   background-color: #D3D3D3;
-  top: 2px;
+  top: 3px;
   border-radius: 100px;
   cursor: pointer;
   transition: .4s;
@@ -562,21 +568,35 @@ a {
     margin-left: 15px;
   }
 
+@media screen and (max-width: 1000px) {
+
+  .control-panel {
+    margin-right: 40px;
+    font-size: .9rem;
+    height: 240px;
+    width: 120px;
+  }
+}
+
 }
 
 @media screen and (max-width: 850px) {
 
+  .music-staff {
+    height: 140px!important;
+  }
 
   .control-panel {
-    height: 220px;
+    height: 200px;
+    width: 115px;
   }
 
   .toggle {
 
       margin-top: 10px;
       margin-bottom: 10px;
-      width: 60px;
-      height: 35px;
+      width: 58px;
+      height: 32px;
 
       background-color: gray;
       border-radius: 10px;
@@ -589,10 +609,11 @@ a {
   .toggle-btn {
     width: 30px;
     height: 30px;
+    top: 1px;
   }
 
   .toggle-p {
-    font-size: .8rem;
+    font-size: .68rem;
   }
 
 
@@ -674,6 +695,7 @@ a {
   .kb-wrapper {
     height: 230px;
     width: 650px;
+    margin-right: 40px!important;
   }
 
 
@@ -720,7 +742,7 @@ a {
 
 
   .kb-wrapper {
-    margin-right: 0;
+    margin-right: 0px!important;
     margin-left: 0;
   }
 
@@ -767,7 +789,7 @@ a {
   font-family: 'Roboto', sans-serif;
   font-size: 1.4rem;
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
   left: 0;
   right: 0;
   margin-left:auto;
@@ -804,8 +826,9 @@ a {
   margin-right:auto;
 }
 
+/* shortcut */
 .key-letter {
-  bottom: 250px;
+  bottom: 270px;
 }
 
 .key-letter-left {
@@ -822,17 +845,17 @@ a {
 
 .d-key {
   left: 33px;
-  bottom: 250px;
+  bottom: 270px;
 }
 
 .enter-key {
   left: 27px;
-  bottom: 260px;
+  bottom: 270px;
 }
 
 .black-key-letter {
   color: white;
-  bottom: 145px;
+  bottom: 164px;
 }
 
 .black-letter-left {
@@ -863,11 +886,11 @@ a {
   }
 
   .white-key-letter {
-    bottom: 208px;
+    bottom: 222px;
   }
 
   .black-key-letter {
-    bottom: 120px;
+    bottom: 135px;
   }
 
   .key-letter-center {
@@ -907,11 +930,11 @@ a {
   }
 
   .white-key-letter {
-    bottom: 195px;
+    bottom: 207px;
   }
 
   .black-key-letter {
-    bottom: 115px;
+    bottom: 126px;
     left: 10px;
   }
 
@@ -940,7 +963,7 @@ a {
   .enter-key {
     font-size: .8rem!important;
     left: 17px;
-    top: -11px;
+    top: 6px;
   }
 
 
@@ -964,11 +987,11 @@ a {
   }
 
   .white-key-letter {
-    bottom: 123px;
+    bottom: 134px;
   }
 
   .black-key-letter {
-    bottom: 70px;
+    bottom: 81px;
     left: 38%;
   }
 
@@ -996,7 +1019,7 @@ a {
   .enter-key {
     font-size: .6rem!important;
     left: 40%;
-    top: -8px;
+    top: 3px;
   }
 
 
@@ -1012,7 +1035,7 @@ a {
 
   .acc-key-p {
     font-size: .5rem;
-    right: -3px;
+    right: 0px;
   }
 
   .key-letter {
@@ -1020,11 +1043,11 @@ a {
   }
 
   .white-key-letter {
-    bottom: 123px;
+    bottom: 134px;
   }
 
   .black-key-letter {
-    bottom: 70px;
+    bottom: 81px;
     left: 38%;
   }
 
@@ -1052,7 +1075,7 @@ a {
   .enter-key {
     font-size: .6rem!important;
     left: 40%;
-    top: -8px;
+    top: 2px;
   }
 
 
@@ -1256,14 +1279,16 @@ a {
 .sharp-sign {
   position: absolute;
   right: 14px;
-  top: -22.5px;
+  top: -6px;
+  /* top: -22.5px; */
   display: block;
 }
 
 .flat-sign {
   position: absolute;
   right: 14px;
-  top: -22.5px;
+  top: -6.5px;
+  /* top: -22.5px; */
   display: none;
 }
 
