@@ -4,7 +4,22 @@
 #test-kb-wrapper {
   height: 262px;
   width: 700px;
+  position: relative;
 }
+
+
+/* Make keyboard opaque without changing color of text overlay */
+/* #test-kb-wrapper:before {
+  position: absolute;
+  content: '';
+  height: 262px;
+  width: 700px;
+  opacity: .5;
+  background-color: gray;
+  z-index: 1;
+} */
+
+
 
 @media (max-width: 1180px) {
   #test-kb-wrapper {
@@ -28,6 +43,7 @@
 }
 
 /* Test Help */
+
 
 .test-help {
   height: 35px;
@@ -95,6 +111,65 @@
   }
 
 }
+
+.test-grid {
+  position: absolute;
+  margin-left:auto;
+  margin-right: auto;
+  left:0;
+  right:0;
+  top: 35%;
+  height:210px;
+  background-color: rgb(224, 214, 234, .5);
+  display: grid;
+
+}
+
+#test-grid-1 {
+  width:430px;
+
+  grid-template-columns: .7fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1.2fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#test-grid-2 {
+  width:370px;
+
+  grid-template-columns: .6fr 1fr 1fr 1fr;
+  grid-template-rows: 1.2fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row1 {
+  font-size: .8rem!important;
+  text-align: center;
+  background-color: rgb(97, 47, 105, 0.95);
+  color: white;
+}
+
+.row {
+  border-top: 1px solid black;
+    border-right: 1px solid black;
+  font-size: .7rem;
+}
+
+.col1 {
+  border-left: 1px solid black;
+  background-color: rgb(97, 47, 105, 0.95);
+  color: white;
+}
+
+.row6 {
+  border-bottom: 1px solid black;
+}
+
+
+
 
 /* Test Modes (Easy, Medium, Hard, Pro, Prodigy) */
 
@@ -222,7 +297,10 @@
     margin-top: 20px;
   }
 
-
+  .response-container {
+    top: 20%;
+    font-size: 1.7rem;
+  }
 
   .mode-wrapper {
     margin-bottom: 40px;
@@ -327,6 +405,28 @@
 
 
 }
+
+/* Response Text */
+
+#test-kb-wrapper {
+  position: relative;
+}
+
+
+.response-container {
+  position: absolute;
+  margin-right: auto;
+  margin-left: auto;
+  right: 0;
+  left: 0;
+  width: 500px;
+  top: 30%;
+}
+
+#response {
+  width: 500px;
+}
+
 
 
 /* for wrong answer animation */

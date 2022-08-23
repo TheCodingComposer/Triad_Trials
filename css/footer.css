@@ -49,17 +49,17 @@
 }
 
 #letter-1 {
-  top: 0px;
+  top: 11px;
   left: 12px;
 }
 
 #letter-2 {
-  top: 11px;
+  top: 22px;
   left: 24px;
 }
 
 #letter-3 {
-  top: 23px;
+  bottom: 12px;
   left: 36px;
 }
 

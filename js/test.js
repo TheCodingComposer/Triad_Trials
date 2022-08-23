@@ -17,6 +17,7 @@ let randomRoot = '';
 let randomQuality = '';
 var buttonText = $('#test-btn');
 var answerText = $('#response');
+var scoreText = $('#score');
 const startTest = document.getElementById("startTest");
 const answerForm = document.getElementById('answerForm');
 const returnForm = document.getElementById('returnToTest');
@@ -140,11 +141,11 @@ startTest.addEventListener('submit', (e) => {
   if (quizState == false) {
     quizState = true;
     buttonText.text('Replay');
-
+    answerText.text('');
 
 
     if (questionNum != 0) {
-      answerText.text('Score: ' + correctNum + ' / ' + (questionNum));
+      scoreText.text('Score: ' + correctNum + ' / ' + (questionNum));
     }
 
     randomRoot = getRandomRoot();
@@ -217,6 +218,10 @@ answerForm.addEventListener('submit', (e) => {
   correctAnswers.push(correctAnswer);
 
 //Correct/Wrong Answer Animation
+
+  $('.white').css('background-color', 'rgb(255, 255, 240, .2)');
+  $('.black ').css({'background-color':'rgb(0, 0, 0, .2)', 'z-index':'3'});
+  $('.key').css('border', '1px solid rgb(0, 0, 0, .2)');
 
   if (answer === correctAnswer || answer === alternateCorrect1 || answer === alternateCorrect2) {
     answerText.text('Correct!');

@@ -53,3 +53,23 @@ form1.addEventListener('submit', (e) => {
 
 
 });
+
+
+// Show "Dim." and "Aug." in form box
+
+// function focus() {
+//   [].forEach.call(this.options, function(o) {
+//     o.textContent = o.getAttribute('value') + o.getAttribute('data-descr');
+//   });
+// }
+//
+// function blur() {
+//   [].forEach.call(this.options, function(o) {
+//     o.textContent = o.getAttribute('value');
+//   });
+// }
+// [].forEach.call($('.short-select'), function(s) {
+//   s.addEventListener('focus', focus);
+//   s.addEventListener('blur', blur);
+//
+// })
