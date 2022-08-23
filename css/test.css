@@ -298,8 +298,10 @@
   }
 
   .response-container {
+    z-index: 6;
     top: 20%;
     font-size: 1.7rem;
+
   }
 
   .mode-wrapper {
@@ -414,6 +416,7 @@
 
 
 .response-container {
+  display: none;
   position: absolute;
   margin-right: auto;
   margin-left: auto;
@@ -421,6 +424,11 @@
   left: 0;
   width: 500px;
   top: 30%;
+  color:white;
+  z-index: 3;
+  background-color: #612f69;
+  border-radius: 8px;
+  border: 1px solid white;
 }
 
 #response {
@@ -432,7 +440,7 @@
 /* for wrong answer animation */
 
 .green {
-  background-color: #5bbd5b;
+  background-color: #5bbd5b!important;
 }
 
 .red {

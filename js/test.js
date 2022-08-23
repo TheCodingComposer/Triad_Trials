@@ -148,6 +148,12 @@ startTest.addEventListener('submit', (e) => {
       scoreText.text('Score: ' + correctNum + ' / ' + (questionNum));
     }
 
+    // reset keyboard display
+    $('.response-container').css('display', 'none');
+    // $('#mode-btn').css('box-shadow', '0 0 0');
+    $('.white').css('background-color', 'ivory');
+    $('.key').css('border', '1px solid black');
+
     randomRoot = getRandomRoot();
     randomQuality = getRandomQuality();
 
@@ -219,9 +225,7 @@ answerForm.addEventListener('submit', (e) => {
 
 //Correct/Wrong Answer Animation
 
-  $('.white').css('background-color', 'rgb(255, 255, 240, .2)');
-  $('.black ').css({'background-color':'rgb(0, 0, 0, .2)', 'z-index':'3'});
-  $('.key').css('border', '1px solid rgb(0, 0, 0, .2)');
+
 
   if (answer === correctAnswer || answer === alternateCorrect1 || answer === alternateCorrect2) {
     answerText.text('Correct!');
@@ -231,6 +235,12 @@ answerForm.addEventListener('submit', (e) => {
     setTimeout(function() { playSound(allNotes[correctNum + 3]); toggleGreen(allNotes[correctNum + 3]); }, 100);
     setTimeout(function() { playSound(allNotes[correctNum + 6]); toggleGreen(allNotes[correctNum + 6]); }, 200);
     setTimeout(function() { playSound(allNotes[correctNum + 11]); toggleGreen(allNotes[correctNum + 11]); }, 300);
+    setTimeout(function() {
+          $('.white').css('background-color', 'rgb(255, 255, 240, .2)');
+          $('.key').css('border', '1px solid rgb(0, 0, 0, .2)');
+          $('.response-container').css('display', 'block');
+          $('#mode-btn').css('box-shadow', '0 0 10px rgb(181, 226, 245)');
+        }, 1300);
     correctNum ++;
     missedAnswers.push('');
   } else {
@@ -247,6 +257,10 @@ answerForm.addEventListener('submit', (e) => {
     setTimeout(function() {
       $('.white').removeClass('red');
       $('.black').removeClass('dark-red');
+      $('.response-container').css('display', 'block');
+      $('.white').css('background-color', 'rgb(255, 255, 240, .2)');
+      $('.key').css('border', '1px solid rgb(0, 0, 0, .2)');
+      $('#mode-btn').css('box-shadow', '0 0 10px rgb(181, 226, 245)');
     }, 1000);
   }
 
