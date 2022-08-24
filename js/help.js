@@ -49,6 +49,12 @@ $('.back-arrow').click( () => {
 });
 
 $('.next-arrow').click( () => {
+  if (currentHelp == 6) {
+    $('.help-overlay').css('display', 'none');
+    $('.main-wrapper').not('.help-overlay').css('opacity', '1');
+    overlay = false;
+    currentHelp = 1;
+  }
   currentHelp++;
   displayHelp(currentHelp);
 });

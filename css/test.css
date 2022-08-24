@@ -5,6 +5,8 @@
   height: 262px;
   width: 700px;
   position: relative;
+  margin-right: 0!important;
+  margin-bottom: 25px;
 }
 
 
@@ -435,6 +437,85 @@
   width: 500px;
 }
 
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/* Note toggle / Staff for Easy-Hard mode */
+
+
+.test-row-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 1s;
+}
+
+/* Control Panel */
+
+#test-control-panel {
+  flex-direction: row!important;
+  width: 70%!important;
+  height: 52px!important;
+  margin-top: 20px!important;
+  margin-right: 30px;
+  margin-left: 0px;
+  transition: .5s;
+
+}
+
+#test-control-panel > .toggle {
+
+  margin-bottom: 10px!important;
+  width: 50px;
+  height: 35px;
+  /* margin-left: 10px; */
+  font-size: .1rem;
+  background-color: gray;
+  border-radius: 10px;
+  border: 3px solid black;
+  opacity: .5;
+  position: relative;
+  transition: 0.4s;
+}
+
+#test-control-panel > #toggle-1 {
+  margin-right: 40px;
+}
+
+/* Music Staff */
+
+#test-music-staff-wrapper {
+  width: 300px!important;
+  flex-direction: row;
+}
+
+#test-music-staff {
+  width: 200px;
+  height: 95px!important;
+  flex-direction: row;
+  margin-right: 20px;
+}
+
+#test-music-staff > .line-wrapper {
+  padding-top: 17px;
+  margin-right: 13px!important;
+}
+
+ #accidentalToggle {
+  margin-top: 0!important;
+}
+
+.keep-notes-toggle {
+  margin-top: 0px!important;
+  width: 80px!important;
+}
 
 
 /* for wrong answer animation */
@@ -444,9 +525,9 @@
 }
 
 .red {
-  background-color: red;
+  background-color: red!important;
 }
 
 .dark-red {
-  background-color: darkred;
+  background-color: darkred!important;
 }

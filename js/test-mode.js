@@ -13,6 +13,7 @@ modeForm.addEventListener('submit', (e) => {
 $('#dropdown-item-1').click( () => {
   $('#mode-text').text('Easy');
   $('.dropdown').css('display', 'none');
+  $('.test-row-container').css('opacity', '1');
   $('#test-btn').text('Start Quiz');
   modeSelected = true;
   mode = 'easy';

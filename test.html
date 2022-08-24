@@ -361,46 +361,109 @@
   </div>
 
     <div class="content-container">
+
       <div id="test-kb-wrapper" class="kb-wrapper">
         <div id="c4" class="key white">
+          <p class="key-letter white-key-letter key-letter-left">a</p>
+          <p class="key-note white-key-note">C</p>
+
           <div id="c-sharp4" class="key black">
+            <p class="key-letter black-key-letter black-letter-left w-key">w</p>
+            <!-- black-key-first-letter = letter before accidental -->
+            <p class="key-note black-key-note"><span class="black-key-first-letter">C</span><span class="acc-key-p">♯</span></p>
           </div>
+
         </div>
+
         <div id="d4" class="key white">
+          <p class="key-letter white-key-letter key-letter-center">s</p>
+          <p class="key-note white-key-note">D</p>
+
           <div id="d-sharp4" class="key black">
+            <p class="key-letter black-key-letter black-letter-right">e</p>
+            <p class="key-note black-key-note"><span class="black-key-first-letter">D</span><span class="acc-key-p">♯</span></p>
           </div>
+
         </div>
+
         <div id="e4" class="key white">
+          <p class="key-letter white-key-letter d-key">d</p>
+          <p class="key-note white-key-note">E</p>
         </div>
+
         <div id="f4" class="key white">
+          <p class="key-letter white-key-letter key-letter-left">f</p>
+          <p class="key-note white-key-note">F</p>
+
           <div id="f-sharp4" class="key black">
+            <p class="key-letter black-key-letter black-letter-left">t</p>
+            <p class="key-note black-key-note"><span class="black-key-first-letter">F</span><span class="acc-key-p">♯</span></p>
           </div>
         </div>
+
         <div id="g4" class="key white">
+          <p class="key-letter white-key-letter key-letter-center">g</p>
+          <p class="key-note white-key-note">G</p>
+
           <div id="g-sharp4" class="key black">
+            <p class="key-letter black-key-letter black-letter-center">y</p>
+            <p class="key-note black-key-note"><span class="black-key-first-letter">G</span><span class="acc-key-p">♯</span></p>
           </div>
         </div>
+
         <div id="a4" class="key white">
+          <p class="key-letter white-key-letter key-letter-center">h</p>
+          <p class="key-note white-key-note">A</p>
+
           <div id="a-sharp4" class="key black">
+            <p class="key-letter black-key-letter black-letter-right">u</p>
+            <p class="key-note black-key-note"><span class="black-key-first-letter">A</span><span class="acc-key-p">♯</span></p>
           </div>
         </div>
+
         <div id="b4" class="key white">
+          <p class="key-letter white-key-letter key-letter-right">j</p>
+          <p class="key-note white-key-note">B</p>
         </div>
+
         <div id="c5" class="key white">
+          <p class="key-letter white-key-letter key-letter-left">k</p>
+          <p class="key-note white-key-note">C</p>
+
           <div id="c-sharp5" class="key black">
+            <p class="key-letter black-key-letter black-letter-left">o</p>
+            <p class="key-note black-key-note"><span class="black-key-first-letter">C</span><span class="acc-key-p">♯</span></p>
           </div>
         </div>
+
         <div id="d5" class="key white">
+          <p class="key-letter white-key-letter key-letter-center">l</p>
+          <p class="key-note white-key-note">D</p>
+
           <div id="d-sharp5" class="key black">
+            <p class="key-letter black-key-letter black-letter-right">p</p>
+            <p class="key-note black-key-note"><span class="black-key-first-letter">D</span><span class="acc-key-p">♯</span></p>
           </div>
         </div>
+
         <div id="e5" class="key white">
+          <p class="key-letter white-key-letter key-letter-right">;</p>
+          <p class="key-note white-key-note">E</p>
         </div>
+
         <div id="f5" class="key white">
+          <p class="key-letter white-key-letter key-letter-left">'</p>
+          <p class="key-note white-key-note">F</p>
+
           <div id="f-sharp5" class="key black">
+            <p class="key-letter black-key-letter black-letter-left">]</p>
+            <p class="key-note black-key-note"><span class="black-key-first-letter">F</span><span class="acc-key-p">♯</span></p>
           </div>
         </div>
+
         <div id="g5" class="key white">
+          <p class="key-letter white-key-letter enter-key" style="font-size: 1rem;">Ent.</p>
+          <p class="key-note white-key-note">G</p>
         </div>
 
         <!-- Display "Correct" or "Incorrect" -->
@@ -411,12 +474,228 @@
       </div>
 
 
+
+      <div class="test-row-container">
+
+      <div id="test-control-panel" class="control-panel">
+
+
+
+        <div class="toggle-text">
+          <p class="toggle-p">Show/Hide <br> <strong> Note Names </strong> </p>
+        </div>
+        <div id="toggle-2" class="toggle">
+          <div id="toggle-btn-2" class="toggle-btn">
+          </div>
+        </div>
+
       </div>
 
+      <div id="test-music-staff-wrapper" class="music-staff-wrapper">
 
-      <div class="score-container">
-          <h1 id="score">&nbsp;</h1>
+      <div id="test-music-staff" class="music-staff">
+
+
+        <div class="line-wrapper">
+        <!-- Five lines of music staff -->
+        <div id="staff-line-1" class="staff-line">
+          <div id="g5-notehead" class="notehead">
+            <div id="g5-notehead-inner" class="notehead-inner">
+            </div>
+          </div>
+          <div id="f-sharp5-notehead" class="notehead notehead-line sharp-notehead flat-notehead">
+            <div id="f-sharp5-accidental" class="accidental">
+              <p class="sharp-sign">♯</p>
+              <p class="flat-sign">♭</p>
+            </div>
+
+            <div id="f-sharp5-notehead-inner" class="notehead-inner">
+            </div>
+          </div>
+          <div id="f5-notehead" class="notehead notehead-line">
+            <div id="f5-notehead-inner" class="notehead-inner">
+            </div>
+          </div>
+          <div id="e-sharp5-notehead" class="notehead notehead-space sharp-notehead flat-notehead flat-notehead-space">
+            <div id="e-sharp5-accidental" class="accidental">
+              <p class="sharp-sign">♯</p>
+              <p class="flat-sign">♭</p>
+            </div>
+            <div id="e-sharp5-notehead-inner" class="notehead-inner">
+            </div>
+          </div>
+          <div id="e5-notehead" class="notehead notehead-space">
+            <div id="e5-notehead-inner" class="notehead-inner">
+            </div>
+          </div>
         </div>
+
+        <div id="staff-line-2" class="staff-line">
+          <div id="d-sharp5-notehead" class="notehead notehead-line sharp-notehead flat-notehead">
+            <div id="d-sharp5-accidental" class="accidental">
+              <p class="sharp-sign">♯</p>
+              <p class="flat-sign">♭</p>
+            </div>
+            <div id="d-sharp5-notehead-inner" class="notehead-inner">
+            </div>
+          </div>
+          <div id="d5-notehead" class="notehead notehead-line">
+            <div id="d5-notehead-inner" class="notehead-inner">
+            </div>
+          </div>
+          <div id="c-sharp5-notehead" class="notehead notehead-space sharp-notehead flat-notehead-space">
+            <div id="c-sharp5-accidental" class="accidental">
+              <p class="sharp-sign">♯</p>
+              <p class="flat-sign">♭</p>
+            </div>
+            <div id="c-sharp5-notehead-inner" class="notehead-inner">
+            </div>
+          </div>
+          <div id="c5-notehead" class="notehead notehead-space">
+            <div id="c5-notehead-inner" class="notehead-inner">
+            </div>
+          </div>
+        </div>
+
+        <div id="staff-line-3" class="staff-line">
+          <div id="b-sharp4-notehead" class="notehead notehead-line sharp-notehead flat-notehead">
+            <div id="b-sharp4-accidental" class="accidental">
+              <p class="sharp-sign">♯</p>
+              <p class="flat-sign">♭</p>
+            </div>
+            <div id="b-sharp4-notehead-inner" class="notehead-inner">
+            </div>
+          </div>
+          <div id="b4-notehead" class="notehead notehead-line">
+            <div id="b4-notehead-inner" class="notehead-inner">
+            </div>
+          </div>
+          <div id="a-sharp4-notehead" class="notehead notehead-space sharp-notehead flat-notehead flat-notehead-space">
+            <div id="a-sharp4-accidental" class="accidental">
+              <p class="sharp-sign">♯</p>
+              <p class="flat-sign">♭</p>
+            </div>
+            <div id="a-sharp4-notehead-inner" class="notehead-inner">
+            </div>
+          </div>
+          <div id="a4-notehead" class="notehead notehead-space">
+            <div id="a4-notehead-inner" class="notehead-inner">
+            </div>
+          </div>
+        </div>
+
+        <div id="staff-line-4" class="staff-line">
+          <div id="g-sharp4-notehead" class="notehead notehead-line sharp-notehead flat-notehead">
+            <div id="g-sharp4-accidental" class="accidental">
+              <p class="sharp-sign">♯</p>
+              <p class="flat-sign">♭</p>
+            </div>
+            <div id="g-sharp4-notehead-inner" class="notehead-inner">
+            </div>
+          </div>
+          <div id="g4-notehead" class="notehead notehead-line">
+            <div id="g4-notehead-inner" class="notehead-inner">
+            </div>
+          </div>
+          <div id="f-sharp4-notehead" class="notehead notehead-space sharp-notehead flat-notehead flat-notehead-space">
+            <div id="f-sharp4-accidental" class="accidental">
+              <p class="sharp-sign">♯</p>
+              <p class="flat-sign">♭</p>
+            </div>
+            <div id="f-sharp4-notehead-inner" class="notehead-inner">
+            </div>
+          </div>
+          <div id="f4-notehead" class="notehead notehead-space">
+            <div id="f4-notehead-inner" class="notehead-inner">
+            </div>
+          </div>
+        </div>
+
+        <div id="staff-line-5" class="staff-line">
+          <div id="e-sharp4-notehead" class="notehead notehead-line sharp-notehead flat-notehead">
+            <div id="e-sharp4-accidental" class="accidental">
+              <p class="sharp-sign">♯</p>
+              <p class="flat-sign">♭</p>
+            </div>
+            <div id="e-sharp4-notehead-inner" class="notehead-inner">
+            </div>
+          </div>
+          <div id="e4-notehead" class="notehead notehead-line">
+            <div id="e4-notehead-inner" class="notehead-inner">
+            </div>
+          </div>
+          <div id="d-sharp4-notehead" class="notehead notehead-sharp sharp-notehead flat-notehead flat-notehead-space">
+            <div id="d-sharp4-accidental" class="accidental">
+              <p class="sharp-sign">♯</p>
+              <p class="flat-sign">♭</p>
+            </div>
+            <div id="d-sharp4-notehead-inner" class="notehead-inner">
+            </div>
+          </div>
+          <div id="d4-notehead" class="notehead notehead-space">
+            <div id="d4-notehead-inner" class="notehead-inner">
+            </div>
+          </div>
+          <div id="c-sharp4-notehead" class="notehead c4-notehead sharp-notehead">
+            <div id="c-sharp4-accidental" class="accidental">
+              <p class="sharp-sign">♯</p>
+              <p class="flat-sign">♭</p>
+            </div>
+            <div id="c-sharp4-notehead-inner" class="notehead-inner">
+            </div>
+            <div id="c-sharp4-line" class="c4-line">
+            </div>
+          </div>
+          <div id="c4-notehead" class="notehead c4-notehead">
+            <div id="c4-notehead-inner" class="notehead-inner">
+            </div>
+            <div id="c4-line" class="c4-line">
+            </div>
+          </div>
+        </div>
+
+        </div>
+
+        <div id="accidentalToggle" class="sharp-notehead">
+          <div id="sharpToggle" class="">
+            <div class="acc-p-container">
+              <p class="acc-p">♯</p>
+            </div>
+
+          </div>
+          <div id="flatToggle" class="">
+            <div class="acc-p-container">
+              <p class="acc-p">♭</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="keep-notes-toggle">
+        <div class="toggle-text">
+          <p id="toggle-3-p" class="toggle-p">Keep Notes <br> on Staff</p>
+        </div>
+        <div id="toggle-3" class="toggle">
+          <div id="toggle-btn-3" class="toggle-btn">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+</div>
+
+
+
+
+      <!-- <div class="score-container">
+          <h1 id="score">&nbsp;</h1>
+        </div> -->
 
 
       <div class="footer">
@@ -496,6 +775,9 @@
     </script>
 
     <script type="text/javascript" src="js/noteheads.js">
+    </script>
+
+    <script type="text/javascript" src="js/test-toggle.js">
     </script>
 
     </body>
