@@ -1,37 +1,18 @@
-## Welcome to GitHub Pages
+### Triad Trials -
 
-You can use the [editor on GitHub](https://github.com/TheCodingComposer/Triad_Trials/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+Music education app which allows you to learn about and test your knowledge of triads, the basic building blocks of chords in Western Classical and Popular music. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### Home Page -
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Interface to explore major, minor, diminished, and augmented triads in all keys. Play a virtual keyboard, show notes on a conventional music staff, and enter triads into the input to have them played and displayed.
 
-```markdown
-Syntax highlighted code block
+### Test Page -
 
-# Header 1
-## Header 2
-### Header 3
+Ten question quiz with five difficulty levels - easy, medium, hard, pro, and prodigy.
 
-- Bulleted
-- List
+### Learn Page - 
 
-1. Numbered
-2. List
+Explanations of what defines each triad.
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/TheCodingComposer/Triad_Trials/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
