@@ -159,6 +159,27 @@ startTest.addEventListener('submit', (e) => {
 
     correctAnswer = randomRoot + ' ' + randomQuality;
     $('#quiz-triad').text(correctAnswer);
+
+    // toggle sharp or flat
+
+    switch (randomQuality){
+
+      case 'major':
+          accMode(getMajorTriad(randomRoot));
+          break;
+      case 'minor':
+          accMode(getMinorTriad(randomRoot));
+          break;
+      case 'diminished':
+          accMode(getDiminishedTriad(randomRoot));
+          break;
+      case 'augmented':
+          accMode(getAugmentedTriad(randomRoot));
+          break;
+
+    }
+
+
     playTriad(randomRoot, randomQuality, mode);
     questionNum ++;
     return;

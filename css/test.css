@@ -9,6 +9,18 @@
   margin-bottom: 25px;
 }
 
+#test-kb-wrapper .key-note {
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 800px) {
+
+#test-kb-wrapper .key-note {
+  font-size: .9rem;
+}
+
+}
+
 
 /* Make keyboard opaque without changing color of text overlay */
 /* #test-kb-wrapper:before {
@@ -460,10 +472,9 @@
 /* Control Panel */
 
 #test-control-panel {
-  flex-direction: row!important;
-  width: 70%!important;
-  height: 52px!important;
-  margin-top: 20px!important;
+  flex-direction: column!important;
+  width: 80px;
+  height: 90px!important;
   margin-right: 30px;
   margin-left: 0px;
   transition: .5s;
@@ -473,8 +484,8 @@
 #test-control-panel > .toggle {
 
   margin-bottom: 10px!important;
-  width: 50px;
-  height: 35px;
+  width: 42px;
+  height: 23px;
   /* margin-left: 10px; */
   font-size: .1rem;
   background-color: gray;
@@ -485,8 +496,16 @@
   transition: 0.4s;
 }
 
-#test-control-panel > #toggle-1 {
-  margin-right: 40px;
+#test-control-panel .toggle-p {
+  font-size: .8rem;
+  margin-top: 5px;
+}
+
+
+#test-control-panel .toggle-btn {
+  top:0;
+  width:23px;
+  height:23px;
 }
 
 /* Music Staff */

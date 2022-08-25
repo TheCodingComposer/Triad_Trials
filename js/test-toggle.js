@@ -58,7 +58,7 @@ function toggle2() {
 
 
 $("#toggle-2").click( () => {
-  toggle2();
+  toggle3();
 })
 
 
@@ -114,7 +114,7 @@ var SharpLetters = {
   'B': 'A'
 }
 
-$('#testSharpToggle').click(() => {
+$('#sharpToggle').click(() => {
   sharpToggle();
 });
 
@@ -122,8 +122,8 @@ function sharpToggle() {
   if (sharpMode == false ) {
     $('.sharp-sign').css('display', 'block');
     $('.flat-sign').css('display', 'none');
-    $('#testSharpToggle').css('background-color', '#612f69');
-    $('#testFlatToggle').css('background-color', 'rgb(211, 211, 211, 1)');
+    $('#sharpToggle').css('background-color', '#612f69');
+    $('#flatToggle').css('background-color', 'rgb(211, 211, 211, 1)');
     $('.flat-notehead').css('top', '-5px');
     $('.flat-notehead-space').css('top', '0');
     $('.acc-key-p').text('♯');

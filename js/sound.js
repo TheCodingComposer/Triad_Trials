@@ -180,6 +180,11 @@ $(".key").click(function(event) {
 
 // add and remove grayed key
 function toggleClass(id) {
+
+  if (hideKeyPress) {
+    return;
+  }
+
   let key = '#' + id;
 
   if ($('.key').hasClass('clicked') == false) {

@@ -65,6 +65,7 @@ $("#toggle-2").click( () => {
 })
 
 
+
 //Keep Noteheads toggle
 
 function toggle3() {
