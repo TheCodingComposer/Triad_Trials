@@ -21,7 +21,7 @@ const f5 = new Audio('js/Piano_mp3/F5.mp3');
 const fSharp5 = new Audio('js/Piano_mp3/F-sharp5.mp3');
 const g5 = new Audio('js/Piano_mp3/G5.mp3');
 
-
+let hideKeyPress = false;
 //Back-up sounds, for logo animation
 const backupA = new Audio('js/Piano_mp3/yA4.mp3');
 const backupA2 = new Audio('js/Piano_mp3/zA4.mp3');

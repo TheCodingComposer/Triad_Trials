@@ -1,5 +1,4 @@
 const modeForm = document.getElementById('mode-form');
-let hideKeyPress = false;
 
 
 modeForm.addEventListener('submit', (e) => {
