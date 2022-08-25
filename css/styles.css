@@ -1437,65 +1437,7 @@ a {
 
 
 
-/* Learn Page */
 
-
-.learn-content {
-  margin: auto;
-  margin-top: 50px;
-  border: 3px solid black;
-  border-radius: 4px;
-  box-shadow: 1px 1px gray;
-  width: 80%;
-  background-color: ivory;
-  font-family: 'Roboto', sans-serif;
-  opacity: .3;
-  transition: 1s;
-  font-size: 0rem!important;
-}
-
-.learn-content:hover {
-  opacity: 1;
-  transition: 1s;
-  font-size: inherit!important;
-  box-shadow: 3px 3px gray;
-}
-
-.learn-content:hover > .learn-p {
-  font-size: 1.3rem;
-  transition: 1s;
-}
-.learn-content:hover > .learn-p:last-child {
-    padding-bottom: 10px;
-}
-
-.learn-content:hover > #small-kb-wrapper {
-  display: flex;
-}
-
-.learn-header {
-  text-align: center;
-  font-weight: 500;
-  font-size: 1.8rem;
-}
-
-.learn-p {
-  text-align: left;
-  padding: 0 50px 0;
-  transition: .1s;
-}
-
-#small-kb-wrapper {
-  width: 100px;
-  height: 40px;
-  display: none;
-}
-
-
-#major-content > .small-kb-container {
-  display: block;
-  width: 100%;
-}
 
 
 
