@@ -12,7 +12,7 @@
   font-family: 'Roboto', sans-serif;
   opacity: .3;
   transition: 1s;
-  font-size: 0rem!important;
+  font-size: 0rem;
 }
 
 .learn-content:hover {
@@ -53,6 +53,13 @@
 /* block containing paragraph and text */
 .learn-block {
   display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 900px) {
+  .learn-block {
+    flex-direction: column;
+  }
 }
 
 .learn-p {
@@ -69,14 +76,14 @@
   cursor: pointer;
 }
 
-#small-kb-wrapper {
+/* #small-kb-wrapper {
   width: 100px;
   height: 40px;
   display: none;
-}
+} */
 
 
-#major-content > .small-kb-container {
+/* #major-content > .small-kb-container {
   display: block;
   width: 100%;
-}
+} */

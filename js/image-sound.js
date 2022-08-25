@@ -1,6 +1,6 @@
 // Since test JS files are not linked to this page, hideKeyPress has to be declared
 //in order for playTriad function to work playTriad function to work
-let hideKeyPress = false;
+
 
 
 $('#major-img').click(() => {
